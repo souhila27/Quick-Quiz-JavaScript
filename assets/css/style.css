@@ -1,0 +1,63 @@
+body{
+    background-color: rosybrown;
+}
+header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+header .page-info{
+    width:50%
+}
+.start-btn{
+    color: black
+    
+}
+.start_btn button   {
+    font-size: 25px;
+    font-weight: 500;
+    background-color:plum;
+    padding: 15px 30px;
+    outline: none;
+    border-radius:  5px; ;
+
+}
+
+.start_btn button:hover{
+    background-color: purple;
+}
+.Timer{
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    width:145px;
+    height:45px;
+    padding:0 8px; 
+}
+.Timer .time-text{
+    font-weight: 400;
+    font-size: 17px;
+    height: 30px;
+    user-select: none;
+}
+.Timer .timer{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width:45px;
+    text-align:center;
+    
+
+}
+
+#endOfQuiz {
+    display: none;
+}
+
+#getResults {
+    display: none;
+}
+.iniform{
+    display: none;
+}

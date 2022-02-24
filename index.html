@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="high-scores"><a href="highscores.html">View High Scores</a></div>
+        <div class="Timer">
+            <div class="time-text">Time Left:</div>
+            <div class="time">30</div>
+        </div>
+        <h1 class="page-title">JavaScript Quiz Challenge </h1>
+
+        <p class="page-info">Try to answer the following code-related questios within the time limit.
+            keep in mind that incorrect answers will penelize your score/time by ten seconds
+        </p>
+
+        <div class="start_btn"><button id="startButton">Start Quiz</button></div>
+
+    </header>
+    <section class="Contents">
+        <div id="myQuestions">
+            <h1 id="score"></h1>
+            <!-- have an empty element called question -->
+            <p id="question"></p>
+            <ol id="answers"></ol>
+
+        </div>
+        <div id="endOfQuiz">
+            <div>
+                <p class="final-score"></p>
+            </div>
+            <div>
+                <form class="initial-form">
+                    Enter your initials: <input type="text" name="initials" id="user_initials">
+                    <br>
+                    <br>
+                    <input type="submit" class="submit" onclick="resetQuiz()">
+                </form>
+            </div>
+        </div>
+
+        <button id="getResults">Get Results</button>
+        <div id="results"></div>
+
+    </section>
+    <main>
+        <section class="scores">
+
+            <div>
+                <ol class="score-list"></ol>
+            </div>
+        </section>
+
+        <!-- 
+        // put an html input box on the screen
+        
+        // put an html submit button on the screen 
+        // set the section to be hidden
+        -->
+
+        <form class="iniform">
+            <p>All done</p>
+            <label for="initials">Enter your Initials:</label>
+            <input type="text" id="user_initials" name="initials">
+            <button onclick="submitBtnEl()" id="submitbtn">Submit</button>
+        </form>
+
+
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
+
+</html>
