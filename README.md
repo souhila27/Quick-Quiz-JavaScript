@@ -16,7 +16,7 @@ git@github.com:souhila27/Quick-Quiz-JavaScript.git
 
 
 ## working page screenshot 
-<img src="./assets/css/images/Screenshot2022-02-23225046.png">
+<img src="/assets/css/images/Screenshot2022-02-23225046.png">
 
 ## contibution 
 Made with 💖 by [Souhila-Boukari]
