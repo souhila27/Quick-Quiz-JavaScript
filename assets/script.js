@@ -26,3 +26,47 @@ startButtonElement.addEventListener('click', function () {
 
     generateQuestion();
 });
+function generateQuestion() {
+    // document.getElementById("score").innerText = gameScore;
+    questionParagraphElement.textContent = myQuestions[currentQuestion].question;
+    answersEl.innerHTML = `
+        <li><button onclick="checkAnswer(this)">${myQuestions[currentQuestion].answers.one}</button></li>
+        <li><button onclick="checkAnswer(this)">${myQuestions[currentQuestion].answers.two}</button></li>
+        <li><button onclick="checkAnswer(this)">${myQuestions[currentQuestion].answers.three}</button></li>
+        <li><button onclick="checkAnswer(this)">${myQuestions[currentQuestion].answers.four}</button></li>
+        `;
+}
+
+var myQuestions = [
+    {
+        question: "the condition in an if statement is enclose with ________.",
+        answers: {
+            one: "quotes",
+            two: "curly brackets",
+            three: "parenthesis",
+            four: "square brackets",
+        },
+        correctAnswer: "parenthesis",
+    },
+    {
+        question: "Arrays in JavaScript can be used to store ___________.",
+        answers: {
+            one: "numbers and strings",
+            two: "other arrays",
+            three: "booleans",
+            four: "all of the above",
+        },
+        correctAnswer: "all of the above",
+    },
+
+    {
+        question: "String values must be enclosed within __________ when being assigned to variables",
+        answers: {
+            one: "commas",
+            two: "curly brackets",
+            three: "quotes",
+            four: "parenthesis",
+        },
+        correctAnswer: "quotes",
+    },
+];
