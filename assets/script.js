@@ -14,3 +14,15 @@ var currentTime = time.textContent;
 var gameScore = 0;
 var score_list = document.querySelector(".score-list");
 var clearClick = document.querySelector("#clearScores");
+
+// listen for a click on the startButton
+startButtonElement.addEventListener('click', function () {
+    var timerStart = setInterval(function () {
+        currentTime--;
+        time.textContent = currentTime;
+        checkTime(timerStart);
+    }, 1000)
+    startButtonElement.style.display = "none";
+
+    generateQuestion();
+});
