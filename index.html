@@ -25,4 +25,30 @@
         <div class="start_btn"><button id="startButton">Start Quiz</button></div>
 
     </header>
+    <section class="Contents">
+        <div id="myQuestions">
+            <h1 id="score"></h1>
+            <!-- have an empty element called question -->
+            <p id="question"></p>
+            <ol id="answers"></ol>
+
+        </div>
+        <div id="endOfQuiz">
+            <div>
+                <p class="final-score"></p>
+            </div>
+            <div>
+                <form class="initial-form">
+                    Enter your initials: <input type="text" name="initials" id="user_initials">
+                    <br>
+                    <br>
+                    <input type="submit" class="submit" onclick="resetQuiz()">
+                </form>
+            </div>
+        </div>
+
+        <button id="getResults">Get Results</button>
+        <div id="results"></div>
+
+    </section>
 </body>
